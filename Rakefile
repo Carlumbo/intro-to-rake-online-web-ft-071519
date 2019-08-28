@@ -11,6 +11,12 @@ namespace :greeting do
   
 end 
 
+namespace :db do 
+2.	 desc ‘migrate changes to your database’ 
+3.	task :migrate => :environment do 
+4.	 	Student.create_table 
+5.	 end 
+
 
 desc 'drop into the Pry console'
 task :console => :environment do 
