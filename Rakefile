@@ -10,3 +10,10 @@ namespace :greeting do
   end 
   
 end 
+
+
+desc 'drop into the Pry console'
+task :cosole => :environment do 
+  Pry.start 
+end 
+
