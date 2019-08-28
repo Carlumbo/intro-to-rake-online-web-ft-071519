@@ -13,7 +13,7 @@ end
 
 
 desc 'drop into the Pry console'
-task :cosole => :environment do 
+task :console => :environment do 
   Pry.start 
 end 
 
