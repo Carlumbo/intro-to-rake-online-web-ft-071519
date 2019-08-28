@@ -16,11 +16,11 @@ end
     task :migrate => :environment do 
     	 	Student.create_table 
    	 end 
+   	task :environment do 
+    require_relative './conifg/environement'
+    end 
    end 
    
-  task :environment do 
-    require_relative './conifg/environement'
-  end 
 
 
 desc 'drop into the Pry console'
